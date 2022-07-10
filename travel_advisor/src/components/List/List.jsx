@@ -4,13 +4,12 @@ import { CircularProgress, Grid, Typography,InputLabel,
 import Detail from '../Detail/Detail'
 import useStyles from './styles'
 
-export default function List({places, ChildClicked, isLoading}) {
+export default function List({places, childClicked, isLoading, type, setType, rating, setRating}) {
     const classes = useStyles()
-    const [type, setType] = useState(['restaurants'])
-    const [rating, setRating] = useState('')
+    
 
     const [elRefs, setElRefs] = useState([])
-    console.log({ChildClicked})
+    
     useEffect(() => {
         const refs= Array(places?.length).fill().map((_, i) => elRefs[i] || createRef())
 
@@ -18,6 +17,7 @@ export default function List({places, ChildClicked, isLoading}) {
     }, [places])
 
     
+    console.log('list:', {childClicked})
 
     return (
         <div className={classes.container}>
@@ -52,7 +52,7 @@ export default function List({places, ChildClicked, isLoading}) {
                     <Grid item key={i} xs={12}>
                         <Detail 
                             place={place} 
-                            selected={Number(ChildClicked) === i} 
+                            selected={Number(childClicked) === i} 
                             refProp={elRefs[i]}
                         />
                     </Grid>

@@ -11,8 +11,8 @@ export default function Detail({place, selected, refProp}) {
     const classes = useStyles()
 
     if(selected) {
-        console.log("scrolling to the selected")
-        refProp?.current?.scrollIntoView({ behavior: 'smooth', block: 'start'})
+        console.log("scrolling to the selected", {refProp})
+        refProp?.current?.scrollIntoView({ behavior: "smooth", block: "start"})
     }
 
     return (
