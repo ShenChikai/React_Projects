@@ -1,6 +1,5 @@
 # Travel Advisor
-## Second React Project
-Build and Deploy an advanced Travel Companion Application using Google Maps. With Geolocation, Google Maps API, Searching for places, Fetching restaurants, hotels and attractions based on location from specialized Rapid APIs, data filtering...
+### Build and Deploy an advanced Travel Companion Application using Google Maps. With Geolocation, Google Maps API, Searching for places, Fetching restaurants, hotels and attractions based on location from specialized Rapid APIs, data filtering...
 <p align="center"><img src="./travel_advisor_screenshot.png" width="100%" height="70%"><p>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
