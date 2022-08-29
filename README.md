@@ -1,4 +1,4 @@
-# This repo will document my journey in learning React development thru various projects
+# React development thru various projects
 
 <p align="center"><img src="./reactLogo.jpeg" width="100%" height="70%"><p>
 
